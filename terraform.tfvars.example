@@ -1,0 +1,27 @@
+# ========================================
+# Configurações GCP
+# ========================================
+gcp_project_id  = "vpn-to-aws-487114"
+gcp_region      = "us-central1"
+gcp_vpc_cidr    = "10.0.0.0/16"
+gcp_subnet_cidr = "10.0.1.0/24"
+
+# ========================================
+# Configurações AWS
+# ========================================
+aws_region      = "us-east-1"
+aws_vpc_cidr    = "172.16.0.0/16"
+aws_subnet_cidr = "172.16.1.0/24"
+
+# ========================================
+# Configurações VPN
+# IMPORTANTE: Mude os shared secrets!
+# ========================================
+tunnel1_preshared_key = "MudeIstoParaAlgoSeguro123456"
+tunnel2_preshared_key = "MudeIstoTambemParaAlgoSeguro789"
+
+# ========================================
+# Tags
+# ========================================
+environment  = "staging"
+project_name = "gcp-aws-vpn"
